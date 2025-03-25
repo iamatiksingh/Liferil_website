@@ -570,7 +570,6 @@ body {
 }
 
 .get-started-section .join-now-btn {
-    opacity: 0;
     animation: bounce 1s ease-out 0.5s forwards;
 }
 
@@ -764,7 +763,7 @@ body {
 }
 
 .store-badge img {
-    height: 40px;
+    height: 60px;
     width: auto;
     filter: grayscale(100%);
     opacity: 0.8;
