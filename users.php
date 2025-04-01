@@ -1,133 +1,151 @@
 <?php
-include 'header.php';
-include 'navigation.php';
+// Include header
+include 'liferill/header.php';
+
+// Include navigation
+include 'liferill/navigation.php';
 ?>
 
-            
-            <!-- Main Content -->
-            <div class="col-md-10 main-content">
-                <!-- Hero Section -->
-                <section class="hero-section animate-section">
-                    <div class="row g-0">
-                        <div class="col-md-6 hero-text animate-item">
-                            <h1>Your Personal Health Journey Starts Here</h1>
-                            <p>Connect with health experts, track your wellness goals, and join a community of health-conscious individuals all in one innovative social platform.</p>
-                            <button class="btn btn-primary join-now-btn">Join Now</button>
-                        </div>
-                        <div class="col-md-6 hero-image animate-item">
-                            <img src="https://img.freepik.com/free-photo/doctor-nurses-special-equipment_23-2148980721.jpg" alt="Healthcare Professional" class="img-fluid">
-                        </div>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1>Your Personal Health Journey Starts Here</h1>
+                <p>Join our health-focused social platform designed to help you connect with like-minded individuals, track your health progress, and access valuable resources for a healthier lifestyle.</p>
+                <a href="#" class="btn btn-primary">Join Now</a>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/app.png" alt="Liferil for Users" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What We Offer Section -->
+<section class="offer-section">
+    <div class="container text-center">
+        <h2>What We Offer for Users</h2>
+        
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs justify-content-center" id="offerTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="connect-tab" data-bs-toggle="tab" data-bs-target="#connect" type="button" role="tab" aria-controls="connect" aria-selected="true">Connect & Share</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="track-tab" data-bs-toggle="tab" data-bs-target="#track" type="button" role="tab" aria-controls="track" aria-selected="false">Track Your Health</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab" aria-controls="learn" aria-selected="false">Learn & Grow</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="consult-tab" data-bs-toggle="tab" data-bs-target="#consult" type="button" role="tab" aria-controls="consult" aria-selected="false">Consult Experts</button>
+            </li>
+        </ul>
+        
+        <!-- Tabs Content -->
+        <div class="tab-content" id="offerTabsContent">
+            <div class="tab-pane fade show active" id="connect" role="tabpanel" aria-labelledby="connect-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="assets/app.jpeg" alt="Connect & Share" class="img-fluid">
                     </div>
-                </section>
-                
-                <!-- What We Offer Section -->
-                <section class="offer-section animate-section">
-                    <h2 class="section-title text-center animate-item">Features for Your Health Journey</h2>
-                    
-                    <div class="row offer-cards">
-                        <div class="col-md-3">
-                            <div class="card offer-card active animate-item" data-tab="social-engagement">
-                                <img src="https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg" class="card-img-top" alt="Social Engagement">
-                                <div class="card-body">
-                                    <h5 class="card-title">Social Engagement For Health</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card offer-card" data-tab="healthlog">
-                                <img src="https://img.freepik.com/free-photo/medical-banner-with-doctor-holding-tablet_23-2149611240.jpg" class="card-img-top" alt="Healthlog">
-                                <div class="card-body">
-                                    <h5 class="card-title">Healthlog</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card offer-card" data-tab="health-communities">
-                                <img src="https://img.freepik.com/free-photo/medium-shot-people-working-together_23-2149300663.jpg" class="card-img-top" alt="Health Communities">
-                                <div class="card-body">
-                                    <h5 class="card-title">Health Communities</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card offer-card" data-tab="health-passport">
-                                <img src="https://img.freepik.com/free-photo/medical-report-with-stethoscope-desk_23-2148504759.jpg" class="card-img-top" alt="Health Passport - Medical Records">
-                                <div class="card-body">
-                                    <h5 class="card-title">Health Passport</h5>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-6 text-start">
+                        <h3>Connect & Share</h3>
+                        <p>Connect with health-conscious individuals who share your interests and goals. Share your health journey and inspire others while getting motivated by their stories.</p>
                     </div>
-                    
-                    <!-- Tab Content -->
-                    <div class="tab-contents">
-                        <div id="social-engagement" class="tab-content active">
-                            <h3>Social Engagement For Health</h3>
-                            <p>Connect with health-focused individuals and professionals. Share your health journey, get advice, and motivate others in their health goals.</p>
-                            <p>Our social engagement features allow you to:</p>
-                            <ul>
-                                <li>Create health-focused posts and updates</li>
-                                <li>Connect with verified doctors and health experts</li>
-                                <li>Join health challenges and activities</li>
-                                <li>Share your progress with your support network</li>
-                            </ul>
-                        </div>
-                        
-                        <div id="healthlog" class="tab-content">
-                            <h3>Healthlog</h3>
-                            <p>Maintain a personal health log to stay on top of your wellness journey. Track progress and share relevant information with your healthcare providers.</p>
-                            <p>Key features include:</p>
-                            <ul>
-                                <li>Daily health and fitness tracking</li>
-                                <li>Medication and appointment reminders</li>
-                                <li>Symptom and mood journal</li>
-                                <li>Secure sharing with your healthcare team</li>
-                            </ul>
-                        </div>
-                        
-                        <div id="health-communities" class="tab-content">
-                            <h3>Health Communities</h3>
-                            <p>Join communities of people with similar health interests or conditions. Learn from others' experiences and find support on your health journey.</p>
-                            <p>Our communities offer:</p>
-                            <ul>
-                                <li>Condition-specific support groups</li>
-                                <li>Fitness and nutrition communities</li>
-                                <li>Mental wellness support networks</li>
-                                <li>Expert-led discussions and Q&A sessions</li>
-                            </ul>
-                        </div>
-                        
-                        <div id="health-passport" class="tab-content">
-                            <h3>Health Passport</h3>
-                            <p>Your digital health passport contains all your essential health information in one secure place. Access it anytime, anywhere, and share with providers when needed.</p>
-                            <p>Features include:</p>
-                            <ul>
-                                <li>Personal medical history storage</li>
-                                <li>Vaccination and test records</li>
-                                <li>Allergy and medication information</li>
-                                <li>Emergency contact details and health directives</li>
-                            </ul>
-                        </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="track" role="tabpanel" aria-labelledby="track-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-start">
+                        <h3>Track Your Health</h3>
+                        <p>Use our comprehensive health log to track your vital statistics, symptoms, medications, and overall wellbeing. Make informed decisions about your health with data-driven insights.</p>
                     </div>
-                </section>
-                
-                <!-- Feature Highlight Section -->
-                <section class="feature-section">
-                    <div class="row g-0">
-                        <div class="col-md-6 feature-text">
-                            <h2>Virtual Health Consultations</h2>
-                            <p>Connect with healthcare professionals from the comfort of your home. Schedule virtual consultations, get expert advice, and manage your health with ease. Watch the video to learn more about this feature.</p>
-                        </div>
-                        <div class="col-md-6 feature-video">
-                            <div class="video-container">
-                                <div class="play-button">
-                                    <i class="fas fa-play"></i>
-                                </div>
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <div class="play-button">
+                                <i class="bi bi-play-circle-fill"></i>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="learn" role="tabpanel" aria-labelledby="learn-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="assets/app.jpeg" alt="Learn & Grow" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 text-start">
+                        <h3>Learn & Grow</h3>
+                        <p>Access a wealth of health information, tips, and resources from verified healthcare professionals. Stay updated with the latest health trends and research.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="consult" role="tabpanel" aria-labelledby="consult-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-start">
+                        <h3>Consult Experts</h3>
+                        <p>Connect with healthcare professionals for advice and consultations. Share your health logs with them for more personalized care and recommendations.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/app.jpeg" alt="Consult Experts" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Demo Section -->
+<section class="video-demo-section bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>Health Tracking Features</h2>
+                <p>Our intuitive health tracking tools help you monitor your progress, set goals, and stay motivated. Watch the video to learn more about these features.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="video-container">
+                    <div class="play-button">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download Section -->
+<section class="download-section">
+    <div class="container text-center">
+        <h2>Download Our App</h2>
+        <p>Get the Liferil app on your mobile device for on-the-go health tracking</p>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <a href="#" class="download-link">
+                    <img src="assets/playstore.png" alt="Google Play Store" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="download-link">
+                    <img src="assets/appstore.png" alt="Apple App Store" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get Started Section -->
+<section class="get-started-section bg-dark text-white text-center">
+    <div class="container">
+        <h2>Get Started</h2>
+        <p>Join Liferil today and take control of your health journey</p>
+        <a href="#" class="btn btn-primary">Join Now</a>
+    </div>
+</section>
 
 <?php
-include 'footer.php';
+// Include footer
+include 'liferill/footer.php';
 ?>
