@@ -172,15 +172,25 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
     z-index: 1050;
+}
+
+/* Mobile Header */
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: block;
+        color: #2a7a9b;
+        background-color: transparent;
+        border: none;
+        font-size: 1.8rem;
     }
     
     .sidebar {
@@ -222,25 +232,35 @@ body {
         width: 100%;
     }
     
-    .sidebar-content {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .mobile-header {
+        display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        padding: 0.5rem;
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    
+    .sidebar-content {
+        flex-direction: column;
         padding: 1rem;
     }
     
     .logo-container {
-        margin-bottom: 0;
-        padding-bottom: 0;
+        margin: 0;
+        padding: 0;
         border-bottom: none;
+        background-color: transparent;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     
     .logo {
         width: 40px;
-        margin-right: 10px;
+        margin-right: 0;
     }
     
     .brand-name {
@@ -253,37 +273,36 @@ body {
     }
     
     .sidebar-menu {
-        margin: 0;
-        display: flex;
-        justify-content: center;
+        margin-top: 1.5rem;
         width: 100%;
-        order: 3;
-        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
     }
     
     .menu-item {
-        margin: 0 0.5rem;
-        padding: 0.5rem;
-        font-size: 0.8rem;
-        text-align: center;
+        margin-bottom: 0.8rem;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        text-align: left;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     
     .menu-item i {
-        margin-right: 0;
-        margin-bottom: 0.3rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0;
     }
     
     .login-container {
-        margin: 0;
-        order: 2;
+        margin-top: 1.5rem;
+        width: 100%;
     }
     
     .login-btn {
-        padding: 0.4rem 1rem;
-        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
     }
 }
 
@@ -294,6 +313,14 @@ body {
     
     .logo {
         width: 30px;
+    }
+    
+    .mobile-header {
+        padding: 0.3rem;
+    }
+    
+    .mobile-menu-toggle {
+        font-size: 1.5rem;
     }
     
     .brand-name {

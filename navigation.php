@@ -7,19 +7,20 @@
 <body>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
             <!-- Sidebar Overlay -->
             <div class="sidebar-overlay" id="sidebar-overlay"></div>
             
             <!-- Left Sidebar -->
             <div class="col-md-2 sidebar" id="sidebar">
                 <div class="sidebar-content">
-                    <div class="logo-container">
-                        <img src="https://web.liferil.com/images/logo.png" alt="Liferil Logo" class="logo">
+                    <div class="mobile-header">
+                        <div class="logo-container">
+                            <img src="https://web.liferil.com/images/logo.png" alt="Liferil Logo" class="logo">
+                        </div>
+                        <!-- Mobile Menu Toggle -->
+                        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
                     </div>
                     
                     <div class="sidebar-quotes">
@@ -45,3 +46,27 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Mobile Menu JavaScript -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+                    const sidebar = document.getElementById('sidebar');
+                    const sidebarOverlay = document.getElementById('sidebar-overlay');
+                    const body = document.body;
+                    
+                    // Toggle sidebar on mobile menu button click
+                    mobileMenuToggle.addEventListener('click', function() {
+                        sidebar.classList.toggle('active');
+                        sidebarOverlay.classList.toggle('active');
+                        body.classList.toggle('menu-open');
+                    });
+                    
+                    // Close sidebar when clicking on overlay
+                    sidebarOverlay.addEventListener('click', function() {
+                        sidebar.classList.remove('active');
+                        sidebarOverlay.classList.remove('active');
+                        body.classList.remove('menu-open');
+                    });
+                });
+            </script>

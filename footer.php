@@ -54,68 +54,7 @@
     <!-- Tab functionality for What We Offer section -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle functionality
-            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-            const sidebar = document.getElementById('sidebar');
-            const sidebarOverlay = document.getElementById('sidebar-overlay');
-            
-            if (mobileMenuToggle && sidebar && sidebarOverlay) {
-                mobileMenuToggle.addEventListener('click', function() {
-                    sidebar.classList.toggle('active');
-                    sidebarOverlay.classList.toggle('active');
-                    document.body.classList.toggle('menu-open');
-                });
-                
-                sidebarOverlay.addEventListener('click', function() {
-                    sidebar.classList.remove('active');
-                    sidebarOverlay.classList.remove('active');
-                    document.body.classList.remove('menu-open');
-                });
-                
-                // Close menu when a menu item is clicked
-                const menuItems = document.querySelectorAll('.menu-item');
-                menuItems.forEach(item => {
-                    item.addEventListener('click', function() {
-                        sidebar.classList.remove('active');
-                        sidebarOverlay.classList.remove('active');
-                        document.body.classList.remove('menu-open');
-                    });
-                });
-            }
-            
-            // Tab functionality for What We Offer section
-            const offerCards = document.querySelectorAll('.offer-card');
-            const tabContents = document.querySelectorAll('.tab-content');
-            
-            offerCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    // Remove active class from all cards and tabs
-                    offerCards.forEach(c => c.classList.remove('active'));
-                    tabContents.forEach(tab => tab.classList.remove('active'));
-                    
-                    // Add active class to clicked card
-                    this.classList.add('active');
-                    
-                    // Show corresponding tab content
-                    const tabId = this.getAttribute('data-tab');
-                    document.getElementById(tabId).classList.add('active');
-                });
-            });
-            
-            // Scroll animation functionality
-            const animateSections = document.querySelectorAll('.animate-section');
-            const animateItems = document.querySelectorAll('.animate-item');
-            
-            // Function to check if element is in viewport
-            function isInViewport(element) {
-                const rect = element.getBoundingClientRect();
-                return (
-                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
-                    rect.bottom >= 0
-                );
-            }
-            
-            // Function to handle scroll animations
+            imations
             function handleScrollAnimations() {
                 animateSections.forEach(section => {
                     if (isInViewport(section) && !section.classList.contains('animated')) {
