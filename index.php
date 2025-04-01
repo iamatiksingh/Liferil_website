@@ -16,7 +16,7 @@ include 'liferill/navigation.php';
                 <a href="#" class="btn btn-primary">Join Now</a>
             </div>
             <div class="col-md-6">
-                <img src="assets/app.png" alt="Liferil App" class="img-fluid">
+                <img src="https://web.liferil.com/images/app.png" alt="Liferil App" class="img-fluid">
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ include 'liferill/navigation.php';
             <div class="tab-pane fade show active" id="social" role="tabpanel" aria-labelledby="social-tab">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Social Engagement" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Social Engagement" class="img-fluid">
                     </div>
                     <div class="col-md-6 text-start">
                         <h3>Social Engagement For Health</h3>
@@ -74,7 +74,7 @@ include 'liferill/navigation.php';
             <div class="tab-pane fade" id="communities" role="tabpanel" aria-labelledby="communities-tab">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Health Communities" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Health Communities" class="img-fluid">
                     </div>
                     <div class="col-md-6 text-start">
                         <h3>Health Communities</h3>
@@ -89,7 +89,7 @@ include 'liferill/navigation.php';
                         <p>Keep all your health records in one place. Share with healthcare providers when needed for better care.</p>
                     </div>
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Health Passport" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Health Passport" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -124,12 +124,12 @@ include 'liferill/navigation.php';
         <div class="row justify-content-center">
             <div class="col-md-3">
                 <a href="#" class="download-link">
-                    <img src="assets/playstore.png" alt="Google Play Store" class="img-fluid">
+                    <img src="https://web.liferil.com/images/playstore.png" alt="Google Play Store" class="img-fluid">
                 </a>
             </div>
             <div class="col-md-3">
                 <a href="#" class="download-link">
-                    <img src="assets/appstore.png" alt="Apple App Store" class="img-fluid">
+                    <img src="https://web.liferil.com/images/appstore.png" alt="Apple App Store" class="img-fluid">
                 </a>
             </div>
         </div>

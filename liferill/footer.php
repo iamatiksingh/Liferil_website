@@ -16,6 +16,29 @@
                 alert('Video player would start here');
             });
         });
+        
+        // Mobile menu toggle functionality
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function() {
+                sidebar.classList.toggle('collapsed');
+            });
+        }
+        
+        // Collapse sidebar by default on mobile
+        function checkScreenSize() {
+            if (window.innerWidth <= 768) {
+                sidebar.classList.add('collapsed');
+            } else {
+                sidebar.classList.remove('collapsed');
+            }
+        }
+        
+        // Check on load and resize
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
     });
 </script>
 </body>

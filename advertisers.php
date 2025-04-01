@@ -16,7 +16,7 @@ include 'liferill/navigation.php';
                 <a href="#" class="btn btn-primary">Advertise With Us</a>
             </div>
             <div class="col-md-6">
-                <img src="assets/app.png" alt="Liferil for Advertisers" class="img-fluid">
+                <img src="https://web.liferil.com/images/app.png" alt="Liferil for Advertisers" class="img-fluid">
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ include 'liferill/navigation.php';
             <div class="tab-pane fade show active" id="targeted" role="tabpanel" aria-labelledby="targeted-tab">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Targeted Advertising" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Targeted Advertising" class="img-fluid">
                     </div>
                     <div class="col-md-6 text-start">
                         <h3>Targeted Advertising</h3>
@@ -74,7 +74,7 @@ include 'liferill/navigation.php';
             <div class="tab-pane fade" id="sponsored" role="tabpanel" aria-labelledby="sponsored-tab">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Sponsored Content" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Sponsored Content" class="img-fluid">
                     </div>
                     <div class="col-md-6 text-start">
                         <h3>Sponsored Content</h3>
@@ -89,7 +89,7 @@ include 'liferill/navigation.php';
                         <p>Establish long-term partnerships with our platform for sustained brand visibility. Collaborate on health initiatives and campaigns that align with your brand values.</p>
                     </div>
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Brand Partnerships" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Brand Partnerships" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -124,12 +124,12 @@ include 'liferill/navigation.php';
         <div class="row justify-content-center">
             <div class="col-md-3">
                 <a href="#" class="download-link">
-                    <img src="assets/playstore.png" alt="Download Media Kit" class="img-fluid">
+                    <img src="https://web.liferil.com/images/playstore.png" alt="Download Media Kit" class="img-fluid">
                 </a>
             </div>
             <div class="col-md-3">
                 <a href="#" class="download-link">
-                    <img src="assets/appstore.png" alt="Contact Sales Team" class="img-fluid">
+                    <img src="https://web.liferil.com/images/appstore.png" alt="Contact Sales Team" class="img-fluid">
                 </a>
             </div>
         </div>

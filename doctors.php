@@ -16,7 +16,7 @@ include 'liferill/navigation.php';
                 <a href="#" class="btn btn-primary">Join as a Doctor</a>
             </div>
             <div class="col-md-6">
-                <img src="assets/app.png" alt="Liferil for Doctors" class="img-fluid">
+                <img src="https://web.liferil.com/images/app.png" alt="Liferil for Doctors" class="img-fluid">
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ include 'liferill/navigation.php';
             <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Professional Profile" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Professional Profile" class="img-fluid">
                     </div>
                     <div class="col-md-6 text-start">
                         <h3>Professional Profile</h3>
@@ -74,7 +74,7 @@ include 'liferill/navigation.php';
             <div class="tab-pane fade" id="expertise" role="tabpanel" aria-labelledby="expertise-tab">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Share Expertise" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Share Expertise" class="img-fluid">
                     </div>
                     <div class="col-md-6 text-start">
                         <h3>Share Expertise</h3>
@@ -89,7 +89,7 @@ include 'liferill/navigation.php';
                         <p>Connect with other healthcare professionals for referrals, collaborations, and knowledge sharing to enhance your practice.</p>
                     </div>
                     <div class="col-md-6">
-                        <img src="assets/app.jpeg" alt="Professional Network" class="img-fluid">
+                        <img src="https://web.liferil.com/images/app.jpeg" alt="Professional Network" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -124,12 +124,12 @@ include 'liferill/navigation.php';
         <div class="row justify-content-center">
             <div class="col-md-3">
                 <a href="#" class="download-link">
-                    <img src="assets/playstore.png" alt="Google Play Store" class="img-fluid">
+                    <img src="https://web.liferil.com/images/playstore.png" alt="Google Play Store" class="img-fluid">
                 </a>
             </div>
             <div class="col-md-3">
                 <a href="#" class="download-link">
-                    <img src="assets/appstore.png" alt="Apple App Store" class="img-fluid">
+                    <img src="https://web.liferil.com/images/appstore.png" alt="Apple App Store" class="img-fluid">
                 </a>
             </div>
         </div>

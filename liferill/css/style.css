@@ -23,6 +23,21 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .logo-container {
@@ -271,13 +286,31 @@ body {
         margin-left: 200px;
         width: calc(100% - 200px);
     }
+    
+    .nav-tabs .nav-link {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
     .sidebar {
         width: 100%;
         height: auto;
         position: relative;
+        padding: 15px;
+    }
+    
+    .sidebar.collapsed .sidebar-content {
+        display: none;
     }
     
     .content-area {
@@ -290,15 +323,66 @@ body {
     }
     
     .sidebar-menu {
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
     }
     
     .menu-item {
-        margin: 0 10px;
+        margin: 5px 0;
     }
     
     .login-container {
         margin-top: 20px;
+    }
+    
+    .nav-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .nav-tabs .nav-link {
+        margin-bottom: 5px;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+        text-align: center;
+    }
+    
+    .hero-section .row {
+        flex-direction: column-reverse;
+    }
+    
+    .hero-section .col-md-6 {
+        margin-bottom: 30px;
+    }
+    
+    .offer-section, .video-demo-section, .download-section {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar-taglines {
+        margin-bottom: 20px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-section p, .offer-section p, .video-demo-section p {
+        font-size: 1rem;
+    }
+    
+    .offer-section h2, .video-demo-section h2, .download-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .tab-pane h3 {
+        font-size: 1.5rem;
+    }
+    
+    .download-section .col-md-3 {
+        width: 50%;
+        margin-bottom: 20px;
     }
 }
